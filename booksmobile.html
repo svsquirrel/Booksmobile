@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booksmobile.css">
+    
+    <title>Books</title>
+</head>
+<body class = 'colmobile'>
+    <div class = 'header'>
+        <h2 class = 'words'>My Library</h2>
+        <button class="openButton">Add Book</button>
+    </div>
+    <div class = 'wrapper'>
+        <div id = 'first' class="book">
+                <p >Murder on the Orient Express</p>
+                <p >by  Agatha Christie</p>
+                <p >Mystery</p>
+                 <button class = 'pressifread'>I read it</button>
+                <button class = 'deletebook'>Delete</button>
+        </div>      
+        <div id = 'second' class="book" >
+                <p >Clean Code</p>
+                <p >by Robert Martin </p>  
+                <p>Technical</p>
+                <button class = 'pressifread'>Not read</button>
+                <button class='deletebook'>Delete</button>
+        </div>
+        <div id = 'grid' class=' gridcontainer'></div>
+    </div> 
+      
+    <div class = 'enterBookPopup'>
+        <div class = 'formPopup' id = 'popupForm'>
+            <form  class = 'formContainer' >
+                <label for = 'title'>Title</label>
+                <input type = 'text' id = 'title' placeholder='Book Title' name = 'title'>
+                <label for = 'author'>Author</label>
+                <input type = 'text' id = 'author' placeholder='Author' name = 'author'>
+                <label for = 'genre'>Genre</label>
+                <input type = 'text' id = 'genre' placeholder='Genre' name = 'genre'>
+                <label for = 'read'>? Read</label>
+                <input type = 'checkbox' id = 'read' name = 'read'>
+                <button type='submit' id ='submit' class = 'btn'>Submit</button>
+                <button type='button'class = 'btn cancel'>Close</button> 
+            </form>
+        </div>
+    </div>
+    
+   
+  <script src = 'booksmobile.js'></script>  
+</body>
+</html>
